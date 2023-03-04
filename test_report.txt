@@ -11,13 +11,14 @@ FAIL src/arrays.test.ts
     expect(received).toEqual(expected) // deep equality
 
     - Expected  - 1
-    + Received  + 0
+    + Received  + 1
 
       Array [
         1,
         2,
         3,
     -   6,
+    +   0,
       ]
 
       263 |     // injectPositive
@@ -37,14 +38,14 @@ PASS src/App.test.tsx
 --------------|---------|----------|---------|---------|-------------------
 File          | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 --------------|---------|----------|---------|---------|-------------------
-All files     |     100 |      100 |     100 |     100 |                   
+All files     |   91.66 |    84.61 |     100 |    91.3 |                   
  App.tsx      |     100 |      100 |     100 |     100 |                   
- arrays.ts    |     100 |      100 |     100 |     100 |                   
+ arrays.ts    |   88.88 |       76 |     100 |   88.23 | 133-136,142-144   
  functions.ts |     100 |      100 |     100 |     100 |                   
 --------------|---------|----------|---------|---------|-------------------
 
 Test Suites: 1 failed, 4 passed, 5 total
 Tests:       1 failed, 22 passed, 23 total
 Snapshots:   0 total
-Time:        4.666 s
+Time:        3.605 s
 Ran all test suites.
