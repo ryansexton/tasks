@@ -1,7 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import { ChangeType } from "./ChangeType";
-
 describe("ChangeType Component tests", () => {
     beforeEach(() => {
         render(<ChangeType />);
