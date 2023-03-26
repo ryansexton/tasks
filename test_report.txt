@@ -25,36 +25,98 @@ PASS src/arrays.test.ts
 PASS src/objects.test.ts
 PASS src/components/StartAttempt.test.tsx
 PASS src/components/TwoDice.test.tsx
+PASS src/bad-components/ChooseTeam.test.tsx
+PASS src/bad-components/DoubleHalf.test.tsx
 PASS src/functions.test.ts
 PASS src/components/ChangeType.test.tsx
 PASS src/components/CycleHoliday.test.tsx
 PASS src/components/Counter.test.tsx
 PASS src/components/RevealAnswer.test.tsx
-PASS src/App.test.tsx
--------------------|---------|----------|---------|---------|-------------------
-File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
--------------------|---------|----------|---------|---------|-------------------
-All files          |   99.59 |     97.5 |     100 |   99.58 |                   
- src               |   99.51 |    96.77 |     100 |    99.5 |                   
-  App.tsx          |     100 |      100 |     100 |     100 |                   
-  arrays.ts        |     100 |      100 |     100 |     100 |                   
-  functions.ts     |     100 |      100 |     100 |     100 |                   
-  nested.ts        |   99.02 |    89.47 |     100 |   99.01 | 141               
-  objects.ts       |     100 |      100 |     100 |     100 |                   
- src/components    |     100 |      100 |     100 |     100 |                   
-  ChangeType.tsx   |     100 |      100 |     100 |     100 |                   
-  Counter.tsx      |     100 |      100 |     100 |     100 |                   
-  CycleHoliday.tsx |     100 |      100 |     100 |     100 |                   
-  RevealAnswer.tsx |     100 |      100 |     100 |     100 |                   
-  StartAttempt.tsx |     100 |      100 |     100 |     100 |                   
-  TwoDice.tsx      |     100 |      100 |     100 |     100 |                   
- src/interfaces    |       0 |        0 |       0 |       0 |                   
-  answer.ts        |       0 |        0 |       0 |       0 |                   
-  question.ts      |       0 |        0 |       0 |       0 |                   
--------------------|---------|----------|---------|---------|-------------------
+PASS src/bad-components/ColoredBox.test.tsx
+  ● Console
 
-Test Suites: 11 passed, 11 total
-Tests:       93 passed, 93 total
+    console.error
+      Warning: Cannot update a component (`ColoredBox`) while rendering a different component (`ColorPreview`). To locate the bad setState() call inside `ColorPreview`, follow the stack trace as described in https://reactjs.org/link/setstate-in-render
+          at ColorPreview (/home/runner/work/tasks/tasks/src/bad-components/ColoredBox.tsx:19:25)
+          at div
+          at div
+          at ColoredBox (/home/runner/work/tasks/tasks/src/bad-components/ColoredBox.tsx:37:41)
+
+      18 |
+      19 | function ColorPreview({ colorIndex, setColorIndex }: Props): JSX.Element {
+    > 20 |     setColorIndex(colorIndex);
+         |     ^
+      21 |     return (
+      22 |         <div
+      23 |             data-testid="colored-box"
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnAboutRenderPhaseUpdatesInDEV (node_modules/react-dom/cjs/react-dom.development.js:24002:15)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:21836:3)
+      at setColorIndex (node_modules/react-dom/cjs/react-dom.development.js:16139:5)
+      at ColorPreview (src/bad-components/ColoredBox.tsx:20:5)
+      at renderWithHooks (node_modules/react-dom/cjs/react-dom.development.js:14985:18)
+      at updateFunctionComponent (node_modules/react-dom/cjs/react-dom.development.js:17356:20)
+
+PASS src/bad-components/ShoveBox.test.tsx
+  ● Console
+
+    console.error
+      Warning: Cannot update a component (`ShoveBox`) while rendering a different component (`MoveableBox`). To locate the bad setState() call inside `MoveableBox`, follow the stack trace as described in https://reactjs.org/link/setstate-in-render
+          at MoveableBox (/home/runner/work/tasks/tasks/src/bad-components/ShoveBox.tsx:14:24)
+          at div
+          at div
+          at ShoveBox (/home/runner/work/tasks/tasks/src/bad-components/ShoveBox.tsx:33:37)
+
+      13 |
+      14 | function MoveableBox({ position, setPosition }: Props): JSX.Element {
+    > 15 |     setPosition(position);
+         |     ^
+      16 |     return (
+      17 |         <div
+      18 |             data-testid="moveable-box"
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnAboutRenderPhaseUpdatesInDEV (node_modules/react-dom/cjs/react-dom.development.js:24002:15)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:21836:3)
+      at setPosition (node_modules/react-dom/cjs/react-dom.development.js:16139:5)
+      at MoveableBox (src/bad-components/ShoveBox.tsx:15:5)
+      at renderWithHooks (node_modules/react-dom/cjs/react-dom.development.js:14985:18)
+      at updateFunctionComponent (node_modules/react-dom/cjs/react-dom.development.js:17356:20)
+
+PASS src/App.test.tsx
+----------------------|---------|----------|---------|---------|-------------------
+File                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------------------|---------|----------|---------|---------|-------------------
+All files             |   99.29 |    96.34 |     100 |   99.27 |                   
+ src                  |   99.51 |    96.77 |     100 |    99.5 |                   
+  App.tsx             |     100 |      100 |     100 |     100 |                   
+  arrays.ts           |     100 |      100 |     100 |     100 |                   
+  functions.ts        |     100 |      100 |     100 |     100 |                   
+  nested.ts           |   99.02 |    89.47 |     100 |   99.01 | 141               
+  objects.ts          |     100 |      100 |     100 |     100 |                   
+ src/bad-components   |   97.29 |       50 |     100 |   97.14 |                   
+  ChooseTeam.tsx      |     100 |       50 |     100 |     100 | 22                
+  ColoredBox.tsx      |     100 |      100 |     100 |     100 |                   
+  DoubleHalf.tsx      |     100 |      100 |     100 |     100 |                   
+  DoubleHalfState.tsx |       0 |      100 |     100 |       0 | 3                 
+  ShoveBox.tsx        |     100 |      100 |     100 |     100 |                   
+ src/components       |     100 |      100 |     100 |     100 |                   
+  ChangeType.tsx      |     100 |      100 |     100 |     100 |                   
+  Counter.tsx         |     100 |      100 |     100 |     100 |                   
+  CycleHoliday.tsx    |     100 |      100 |     100 |     100 |                   
+  RevealAnswer.tsx    |     100 |      100 |     100 |     100 |                   
+  StartAttempt.tsx    |     100 |      100 |     100 |     100 |                   
+  TwoDice.tsx         |     100 |      100 |     100 |     100 |                   
+ src/interfaces       |       0 |        0 |       0 |       0 |                   
+  answer.ts           |       0 |        0 |       0 |       0 |                   
+  question.ts         |       0 |        0 |       0 |       0 |                   
+----------------------|---------|----------|---------|---------|-------------------
+
+Test Suites: 15 passed, 15 total
+Tests:       110 passed, 110 total
 Snapshots:   0 total
-Time:        10.849 s
+Time:        11.417 s
 Ran all test suites.
