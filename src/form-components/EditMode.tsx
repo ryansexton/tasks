@@ -28,7 +28,7 @@ export function EditMode(): JSX.Element {
                         <Form.Control
                             type="text"
                             value={student}
-                            disabled={edit}
+                            disabled={!edit}
                             onChange={(
                                 event: React.ChangeEvent<HTMLInputElement>
                             ) => setStudent(event.target.value)}
@@ -38,7 +38,7 @@ export function EditMode(): JSX.Element {
                         type="checkbox"
                         label="Student"
                         checked={isStudent}
-                        disabled={edit}
+                        disabled={!edit}
                         onChange={() => setIsStudent(!isStudent)}
                     />
                 </div>
