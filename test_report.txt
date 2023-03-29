@@ -47,6 +47,7 @@ FAIL src/form-components/EditMode.test.tsx
     [36m<input[39m
       [33mchecked[39m=[32m""[39m
       [33mclass[39m=[32m"form-check-input"[39m
+      [33mdisabled[39m=[32m""[39m
       [33mtype[39m=[32m"checkbox"[39m
     [36m/>[39m
 
@@ -80,6 +81,7 @@ FAIL src/form-components/EditMode.test.tsx
                 [36m</label>[39m
                 [36m<input[39m
                   [33mclass[39m=[32m"form-control"[39m
+                  [33mdisabled[39m=[32m""[39m
                   [33mtype[39m=[32m"text"[39m
                   [33mvalue[39m=[32m"Your Name"[39m
                 [36m/>[39m
@@ -90,6 +92,7 @@ FAIL src/form-components/EditMode.test.tsx
                 [36m<input[39m
                   [33mchecked[39m=[32m""[39m
                   [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdisabled[39m=[32m""[39m
                   [33mtype[39m=[32m"checkbox"[39m
                 [36m/>[39m
                 [36m<label[39m
@@ -140,6 +143,7 @@ FAIL src/form-components/EditMode.test.tsx
     [36m<input[39m
       [33mchecked[39m=[32m""[39m
       [33mclass[39m=[32m"form-check-input"[39m
+      [33mdisabled[39m=[32m""[39m
       [33mtype[39m=[32m"checkbox"[39m
     [36m/>[39m
 
@@ -173,6 +177,7 @@ FAIL src/form-components/EditMode.test.tsx
                 [36m</label>[39m
                 [36m<input[39m
                   [33mclass[39m=[32m"form-control"[39m
+                  [33mdisabled[39m=[32m""[39m
                   [33mtype[39m=[32m"text"[39m
                   [33mvalue[39m=[32m"Your Name"[39m
                 [36m/>[39m
@@ -183,6 +188,7 @@ FAIL src/form-components/EditMode.test.tsx
                 [36m<input[39m
                   [33mchecked[39m=[32m""[39m
                   [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdisabled[39m=[32m""[39m
                   [33mtype[39m=[32m"checkbox"[39m
                 [36m/>[39m
                 [36m<label[39m
@@ -233,6 +239,7 @@ FAIL src/form-components/EditMode.test.tsx
     [36m<input[39m
       [33mchecked[39m=[32m""[39m
       [33mclass[39m=[32m"form-check-input"[39m
+      [33mdisabled[39m=[32m""[39m
       [33mtype[39m=[32m"checkbox"[39m
     [36m/>[39m
 
@@ -266,6 +273,7 @@ FAIL src/form-components/EditMode.test.tsx
                 [36m</label>[39m
                 [36m<input[39m
                   [33mclass[39m=[32m"form-control"[39m
+                  [33mdisabled[39m=[32m""[39m
                   [33mtype[39m=[32m"text"[39m
                   [33mvalue[39m=[32m"Your Name"[39m
                 [36m/>[39m
@@ -276,6 +284,7 @@ FAIL src/form-components/EditMode.test.tsx
                 [36m<input[39m
                   [33mchecked[39m=[32m""[39m
                   [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdisabled[39m=[32m""[39m
                   [33mtype[39m=[32m"checkbox"[39m
                 [36m/>[39m
                 [36m<label[39m
@@ -326,6 +335,7 @@ FAIL src/form-components/EditMode.test.tsx
     [36m<input[39m
       [33mchecked[39m=[32m""[39m
       [33mclass[39m=[32m"form-check-input"[39m
+      [33mdisabled[39m=[32m""[39m
       [33mtype[39m=[32m"checkbox"[39m
     [36m/>[39m
 
@@ -359,6 +369,7 @@ FAIL src/form-components/EditMode.test.tsx
                 [36m</label>[39m
                 [36m<input[39m
                   [33mclass[39m=[32m"form-control"[39m
+                  [33mdisabled[39m=[32m""[39m
                   [33mtype[39m=[32m"text"[39m
                   [33mvalue[39m=[32m"Your Name"[39m
                 [36m/>[39m
@@ -369,6 +380,7 @@ FAIL src/form-components/EditMode.test.tsx
                 [36m<input[39m
                   [33mchecked[39m=[32m""[39m
                   [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdisabled[39m=[32m""[39m
                   [33mtype[39m=[32m"checkbox"[39m
                 [36m/>[39m
                 [36m<label[39m
@@ -979,5 +991,5 @@ All files                    |   98.05 |    95.45 |    97.2 |      98 |
 Test Suites: 2 failed, 18 passed, 20 total
 Tests:       6 failed, 128 passed, 134 total
 Snapshots:   0 total
-Time:        15.151 s
+Time:        12.153 s
 Ran all test suites.
